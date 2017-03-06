@@ -1,0 +1,143 @@
+@import './_config.styl'
+.dataTables_wrapper
+	margin-top -54px
+	margin-bottom 38px
+	
+.dataTables_info
+	text-align: left
+	display: inline-block
+	float: left
+	font-size: 13px
+	padding: 7px
+	padding-left: 0
+.header_custom_table
+	position relative
+	&_right
+		position absolute
+		right 100px
+.dataTables_paginate
+	display: inline-block;
+	text-align: right;
+	float: right;
+	font-size: 14px;
+	.paginate_button
+		cursor pointer
+	.previous
+	.next
+		color: #3d3d3d
+		font-size 13px
+	span
+		.paginate_button
+			padding: 6px 10px
+			border-radius: 100%
+			color: white
+			margin: 0px 4px
+			display: inline-block
+			background-color $color2
+			&.current
+				background: $color1 !important
+		
+.icon_material
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-webkit-font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+	
+.dataTables_filter
+	text-align: right
+	padding: 18px
+	padding-right: 0
+	font-size 15px
+	label
+		position relative
+		&::after
+			content 'search'
+			position: absolute
+			right: 5px
+			top: -4px
+			color: #717171
+			@extend .icon_material
+	input
+		margin-left 10px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		background-color: #fff
+		background-image: none
+		border-radius: 4px
+		border: 1px solid rgba(174, 187, 200, 0.64)
+		box-sizing: border-box
+		color: #1f2d3d
+		font-size: inherit
+		height: 36px
+		line-height: normal
+		outline: none
+		padding: 3px 10px
+		transition: border-color .2s cubic-bezier(.645,.045,.355,1)
+		&:focus
+			outline: none
+			border: 2px solid $color2
+			
+.dataTable
+	text-align: left
+	font-size: 14px
+	border: 1px solid #e0e6ed
+	margin-bottom: 14px
+	i
+		font-size 18px
+	tbody
+		tr
+			&:hover
+				background-color #eff2f7
+	td
+		padding 14px
+		/*border-bottom: 1px solid #e0e6ed*/
+		position relative
+		div
+			display inline-block
+			margin 3px
+			
+		button
+			a
+				color white
+		&.sorting
+			cursor pointer
+		&.sorting_desc
+			cursor pointer
+			&::after
+				content 'keyboard_arrow_up'
+				position: absolute
+				right: 8px
+				top: 12px
+				color: #494b4e
+				@extend .icon_material
+		&.sorting_asc
+			cursor pointer
+			&::after
+				content 'keyboard_arrow_down'
+				position: absolute
+				right: 8px
+				top: 12px
+				color: #494b4e
+				@extend .icon_material
+	tr
+		&.even
+			background-color #FAFAFA
+	thead
+		background: #EFF2F7
+		font-weight: 600
+
+	
+	
+table
+	img
+		height 48px

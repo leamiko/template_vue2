@@ -1,0 +1,78 @@
+@import './_config.styl'
+@import '../../stylus/libs/jeet/index.styl'
+
+.open_modal
+	.el-select-dropdown
+		z-index: 10003 !important
+	.pac-container
+		z-index: 10003 !important
+
+.v-modal
+	z-index: 10001 !important
+
+.el-message-box__wrapper
+	z-index: 10002 !important
+
+.cf
+	clear both
+
+.show
+	display inline-block !important
+
+.hide
+	display none !important
+
+.color
+	&_color1
+		color: $color3
+
+h3
+	color: $color1
+	border-bottom: 1px dashed #c1c1c1
+	padding: 8px 0px
+	margin-bottom 30px
+	margin-top: 20px
+
+.bg
+	&_white
+		background-color: #fff !important
+		color: #262626 !important
+		border: 1px solid #989898
+	
+	&_color1
+		background-color $color1 !important
+		color white !important
+		border none !important
+	&_color2
+		background-color $color2 !important
+		color white !important
+		border none !important
+
+.text
+	&_center
+		text-align center
+	&_right
+		text-align right
+	&_left
+		text-align left
+
+.float
+	&_left
+		float left
+	&_right
+		float right
+
+.center_content
+	center(1250px, 5px)
+
+.app_section
+	margin-top: 130px
+	margin-left: 222px
+	padding-right: 1.5%
+	padding-bottom: 2%
+	
+.el-notification
+	z-index 1000000 !important
+	p
+		text-transform capitalize
+		
